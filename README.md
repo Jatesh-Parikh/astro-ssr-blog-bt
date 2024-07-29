@@ -1,5 +1,9 @@
 # Astro Starter Kit: Minimal
 
+![Astro SSR Blog](./public/images/screen.png)
+
+## This project is based on a tutorial by ![Brad Traversy](https://www.youtube.com/watch?v=XoIHKO6AkoM)
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
