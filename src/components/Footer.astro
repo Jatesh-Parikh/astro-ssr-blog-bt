@@ -12,8 +12,8 @@ const uniqueTags: string[] = [...new Set(tags)];
 
 <footer class="bg-indigo-900 text-white pb-8">
   <div class="container mx-auto mt-10 max-w-screen-xl px-8">
-    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 justify-evenly justify-items-center">
-      <div class="mt-10">
+    <div class="flex flex-col md:flex-row gap-12">
+      <div class="mt-8 flex-1">
         <h3 class="text-xl font-semibold mb-4">About</h3>
         <p class="text-white text-sm">
           TechPeople is a blog for tech enthusiasts. We publish articles,
@@ -21,9 +21,9 @@ const uniqueTags: string[] = [...new Set(tags)];
           advancements.
         </p>
       </div>
-      <div class="mt-10">
+      <div class="mt-8 flex-1">
         <h3 class="text-xl font-semibold mb-4">Categories</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-2 gap-10">
             <ul class="text-white text-sm">
                 {uniqueTags.slice(0, 7).map(tag => (
                 <li class="mb-2">
@@ -40,7 +40,7 @@ const uniqueTags: string[] = [...new Set(tags)];
             </ul>
         </div>
       </div>
-      <div class="mt-10">
+      <div class="mt-8 min-w-[200px]">
         <h3 class="text-xl font-semibold mb-4">Contact</h3>
         <ul class="text-white text-sm">
           <li class="mb-2">
